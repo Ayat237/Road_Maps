@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flutter</title>
+    <link rel="stylesheet" href="flutter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Edu+NSW+ACT+Foundation&family=Playfair+Display:ital@1&family=Raleway:ital,wght@1,200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <nav class="navBar">
+            <img src="../media/R.png" class="logo">
+            <!-- <button id="swichToLightMode" onclick="lightMode()">SwichToLightMode</button> -->
+            <ul>
+                <li><a href="../roadMaps2.html"> Home</a></li>
+                <li><a href="../about us.html">About Us</a></li>
+                <li><a href="http://localhost/server4/contactUs.php">Contact Us</a></li>
+                <input class="Search" type="text" placeholder="Search..">
+                <li class="registerimg"><img src="../media/register.png"></li>
+                <a href="http://localhost/server4/sign_in.php" class="Login"><label>Login</label></a>
+                <li class="registerimg"><img src="../media/register.png"></li>
+                <a href="http://localhost/server4/sign_up.php" class="Register"><label>Register</label></a>
+                <div class="con" id="con">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </ul>
+        </nav>
+
+        <!-- ===================================================================================================== -->
+
+        <div class="titlePage">
+            <p class="topTitle">Road Map for Essential Studio for Flutter</p>
+        </div>
+
+        <!-- ====================================================================================================== -->
+        <div class="innerContainer">
+            <div class="article">
+                <h1>1. Learn Dart</h1>
+                <p class="p1">
+                    Don’t directly jump to Flutter without knowing Dart! There is no doubt that the first step in
+                    learning Flutter should be exploring a programming language
+                    . In this case, it's Dart.
+                    Dart’s syntax looks and behaves a lot like C#, its closest cousin. So, if you are familiar with C#,
+                    learning Dart language becomes easier.
+                    Dart uses Object-oriented programming (OOP) concepts, so to fully understand all the mechanisms of a
+                    language, it is crucial to know and understand
+                    these concepts.
+                    OOP refers to an object-based programming methodology, not just functions and procedures. These
+                    objects are organized into classes that allow individual
+                    objects to be grouped together. In Dart, everything you pass to a variable is an object. Every
+                    object is an instance of a class. Even numbers, functions
+                    , and null are objects. All objects except null inherit from the Object class. When we go to Dart
+                    guides, we have a preview of the four most visited
+                    websites. Initially, these two are worth focusing on: Language tour and Language samples.
+                    They provide a brief, example-based introduction to the Dart language that can be of great help to
+                    beginners. After reading these sections, it is
+                    worthwhile to focus on examining the best practices for consistent, maintainable, efficient Dart
+                    code. It is also very important to understand
+                    asynchronous programming. Without it, we will not be able to write an application in Flutter, e.g.
+                    when we have to use the REST API. A complete
+                    and very detailed Dart course supported by examples can also be found here. Testing examples in Dart
+                    can be done with DartPad. DartPad is an open-source
+                    tool that lets you play with the Dart language in any modern browser.
+                </p>
+                <h1>2. Install Flutter SDK - Prepare IDE</h1>
+                <p class="p2">
+                    Once you have mastered the secrets of the Dart language, you can start installing the software
+                    development kit (SDK)
+                    and configuring the integrated development environment (IDE). The whole process is described step by
+                    step depending on the
+                    system on which we want to install Flutter. When it comes to IDE, you can choose from: Visual Studio
+                    Code, which I personally
+                    use, and Android Studio. You can install various extensions to help you write flutter code depending
+                    on your preferences. For
+                    VS Code, you can visit this marketplace.
+                </p>
+                <h1>3. Study Material Design Concept</h1>
+                <p class="p3">
+                    If we want to create user-friendly interfaces, it is very important to read material design rules.
+                    Material Components for Flutter unite design and engineering with a library of components that
+                    create a
+                    consistent user experience across apps and platforms. As the Material Design system evolves, these
+                    components
+                    are updated to ensure consistent pixel-perfect implementation, adhering to Google's front-end
+                    development standards.
+                    MDC is also available for Android, iOS, and the web.
+                    P.S Read how we build applications in Flutter and ensure high-quality of the product.
+
+                </p>
+                <h1>4. Explore Widgets</h1>
+                <p class="p3">
+                    Widgets are an indispensable part of Flutter. They build our tree responsible for constructing the
+                    view. We distinguish two most
+                    important types of widgets: StatelessWidget and StatefulWidget. Without understanding the
+                    differences between them, you cannot start
+                    writing a Flutter application.
+                    So as the naming suggests, a widget is either stateful or stateless. If a widget can change, it’s
+                    stateful. When you want to add
+                    interactivity to your application, you need to be familiar with stateful widgets that are dynamic.
+                    The widget state is stored in
+                    the State object. Flutter provides an extensive library of widgets. You can browse them
+                    alphabetically.
+
+                </p>
+                <h1>5. Learn State Management and Choose Project Architecture</h1>
+                <p class="p3">
+                    State management is an issue that cannot be ignored when creating a Flutter app. In Flutter it’s
+                    normal to rebuild parts of your UI
+                    from scratch instead of modifying it. Flutter is fast enough to do that, even on every frame if
+                    needed. Flutter builds its user interface
+                    to reflect the current state of your app.
+
+                    There is no single approach to state management in an application. Many alternative solutions have
+                    been created, such as: Provider,
+                    Bloc, Riverpod, Redux or GetIt. At Monterail, we use the Bloc pattern. In large projects, this type
+                    of approach is very appropriate and
+                    allows you to apply the assumptions of clean architecture.
+                    Bloc makes it easy to separate presentation from business logic, making your code fast, easy to
+                    test, and reusable. Bloc is easy to understand
+                    and can be used by developers of various levels of experience. You can also easily test every aspect
+                    of the application. Therefore, I recommend
+                    that you read the bloc documentation. It is very clear. Moreover, many interesting examples from
+                    which you can draw patterns have been added.
+                    Many companies use this approach. In requirements for a Flutter developer position, Bloc knowledge
+                    is often required. However, if you decide
+                    to take a different approach, you can preview other possible solutions.
+                    Clean architecture and testing are core issues when our project is large and many developers work on
+                    it at the same time. In Flutter, a complex
+                    UI tree of components is often built. Therefore, it is important to separate the individual layers
+                    and use test-driven development, in short,
+                    TDD. Probably the best course I found for Flutter in this context is the Flutter TDD Clean
+                    Architecture Course by ResoCoder. Combines bloc
+                    pattern with the TDD approach.
+
+                </p>
+                <h1>6. Make API Calls and Add Database Integration</h1>
+                <p class="p5">
+                    When you feel comfortable with building view trees and creating your own widgets, you are familiar
+                    with the state management mechanism,
+                    you should also focus on learning API calls. As developers, we often create applications that
+                    require a backend side. The Pub provides great
+                    packages such as: http or dio to perform HTTP requests.
+                    If we need to store some data from our application, an inherent element is the use of a database.
+                    Hive is a lightweight and blazing fast
+                    key-value database written in pure Dart. This package is great for storing data in your application.
+                    You should also consider integrating
+                    with Firebase. As you have already seen, Flutter provides solid and complete documentation. The same
+                    is true for integration with Firebase.
+                </p>
+                <h1>What to Do Before Preparing for the Cisco CCNA</h1>
+                <p class="p6">
+                    If you’re still interested in pursuing the CCNA, make sure you get access to the curriculum or a
+                    textbook,
+                    and also arrange for access to equipment or a simulation. You’ll want to have an opportunity to
+                    build your
+                    experience configuring Cisco devices as outlined on the CCNA. In this article I cover some things
+                    you should
+                    consider as you move toward preparing for the CCNA.
+                </p>
+                <h1>7. Flutter Conversions Guides - Useful for Developers from Other Mobile Frameworks</h1>
+                <p class="p7">
+                    If you've had previous experience with other frameworks or have written natively for iOS or Android,
+                    there is a great sectio
+                    n in the Flutter documentation that explains how an aspect of a particular platform has been
+                    implemented in Flutter. Personally,
+                    I have worked in Xamarin.Forms before, so I found answers to many of my doubts. If you're switching
+                    from a different platform,
+                    I think it's worth taking a look at the section: From another platform?
+                </p>
+            </div>
+            <div class="recommends">
+
+                <ul class="ul-1">
+                    <caption>POPULAR COURSES</caption>
+                    <li><a href="######" target="_blank" class="ul-links">course1</a></li>
+                    <li> <a href="#####" target="_blank" class="ul-links">course2</a> </li>
+                    <li><a href="#####" target="_blank" class="ul-links">course3</a></li>
+                    <li><a href="#####" target="_blank" class="ul-links">course4</a></li>
+                    <li><a href="#####" target="_blank" class="ul-links">course5</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ===================================================================================================== -->
+
+        <button id="btnScroll"><img src="arrow.png" alt=""></button>
+
+        <!-- ===================================================================================================== -->
+
+        <footer class="footer">
+            <div class="textAndLogo">
+                <p class="footerText">RoadMaps</p>
+                <img src="../media/R.png" class="footerLogo">
+            </div>
+            <div>
+                <ul>
+                    <h1>Site Menu</h1>
+
+                    <li><a href="../roadMaps2.html"> Home</a></li>
+
+
+                    <li><a href="##############">Tracks</a></li>
+
+
+                    <li><a href="../about us.html">AboutUs</a></li>
+
+
+                    <li> <a href="../contactUs.html">ContactUs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="sccialmedia">
+                    <h1>SOCIAL</h1>
+                    <li><img src="../media/face.png" alt="Face"> Facebook</a></li>
+                    <li><img src="../media/twitter.png" alt="Twitter"> Twitter</a></li>
+                    <li><img src="../media/instagram.png" alt="Instagram"> Instagram</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h1>Copyright © 2022 Roadmap</h1>
+                    <li>Ahmed Ali</li>
+                    <li>Ahmed Hussein</li>
+                    <li>Ayat Mohammed</li>
+                    <li>Farah Mohammed</li>
+                </ul>
+            </div>
+
+        </footer>
+
+        <!-- ===================================================================================================== -->
+
+        <!-- Side List -->
+        <div id="sideList" class="sideList">
+            <ul>
+                <li><a href="../Python/python.html" target="_blank" class="sideList_links">Python</a></li>
+                <li><a href="../Flutter/Flutter.html" target="_blank" class="sideList_links">Flutter</a></li>
+                <li><a href="../syberscurity/syberscuritymainbbage.html" target="_blank" class="sideList_links">Cyber
+                        Security</a></li>
+                <li><a href="../android/android.html" target="_blank" class="sideList_links">Android Application</a>
+                </li>
+                <li><a href="../Embedded/embedded.html" target="_blank" class="sideList_links">Embedded Systems</a></li>
+                <li><a href="../machine/machine.html" target="_blank" class="sideList_links">Machine learning</a></li>
+                <li><a href="../PS/PS.html" target="_blank" class="sideList_links">Problem Solving</a></li>
+                <li><a href="../AI/ai.html" target="_blank" class="sideList_links">Artificial Intelligence</a></li>
+                <li><a href="../web/web.html" target="_blank" class="sideList_links">Web Development</a></li>
+                <li><a href="../Java/java2.html" target="_blank" class="sideList_links">Java</a></li>
+                <li><a href="../Digital Marketing/dm.html" target="_blank" class="sideList_links">Marketing</a></li>
+                <li><a href="../Data Structure/DataStructure.html" target="_blank" class="sideList_links">Data
+                        Structure</a></li>
+            </ul>
+        </div>
+        <!-- ===================================================================================================== -->
+
+    </div>
+    <script src="flutter.js"></script>
+</body>
+
+</html>

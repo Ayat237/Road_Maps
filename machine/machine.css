@@ -1,0 +1,361 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: #262626;
+  animation-name: background_photo;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+/* =============================================================================================== */
+
+.mainContainer {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-areas:
+    "nav nav nav nav nav nav nav nav nav nav""lo lo lo lo lo lo lo lo lo lo""cont cont cont cont cont cont cont cont cont cont "
+    "foot foot foot foot foot foot foot foot foot foot";
+  grid-template-rows: 100px 300px 5050px 200px;
+  grid-gap: 5px 5px;
+}
+
+/* =============================================================================================== */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  grid-area: nav;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 90px;
+  width: 100%;
+  z-index: 99999;
+  text-decoration: none;
+}
+
+.Register {
+  position: relative;
+  right: 58px;
+  top: 15px;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+.Login {
+  position: relative;
+  right: 51px;
+  top: 15px;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+.registerimg {
+  position: relative;
+  top: 12px;
+}
+
+.Login:hover,
+.Register:hover {
+  text-decoration: underline;
+  color: #f7f7f7;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+nav li:hover {
+  color: #c7bdbd;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin-right: 80px;
+}
+
+.Search {
+  width: 220px;
+  height: 50px;
+  margin-left: 288px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #000000;
+  border-radius: 10px;
+  position: relative;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+.con {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 95%;
+  margin-top: -40px;
+  width: 60px;
+  height: 150px;
+  position: relative;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 2.5px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+nav li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  margin-right: 30px;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+/* ======================================================================================= */
+
+.titlePage {
+  display: flex;
+  flex-direction: row;
+  grid-area: lo;
+  color: #f7f7f7;
+  font-size: 50px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.topTitle {
+  color: #f7f7f7;
+  text-shadow: 0 5px #8c8c8c, -1px 0 #bfbfbf, -1px 2px #8c8c8c, -2px 1px #8c8c8c,
+    -2px 3px #bfbfbf, -3px 2px #8c8c8c, -3px 4px #595959, -4px 3px #bfbfbf,
+    -4px 5px #595959, -5px 4px #595959, -5px 6px #262626, -6px 5px #595959,
+    -6px 7px #262626, -7px 6px #595959, -7px 8px #262626, -8px 7px #595959,
+    -9px 8px #0d0d0d, -10px 7px #595959;
+  text-align: center;
+  font-size: 50px;
+}
+
+.titleMessage {
+  font-size: 35px;
+  text-align: center;
+  font-family: system-ui;
+}
+
+.titleDiv1 {
+  width: 70%;
+  display: inline-block;
+  padding: 10px;
+  border: 3px solid #262626;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #262626;
+}
+
+.titleDiv2 {
+  width: 30%;
+  display: inline-block;
+}
+
+.titleDiv2 img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ===================================================================================== */
+
+.footer {
+  grid-area: foot;
+  background-color: #000000;
+  color: #ffffff;
+  height: 300px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.footer div ul {
+  display: grid;
+}
+
+.footer ul {
+  list-style: none;
+  float: left;
+  padding-left: 210px;
+  margin-top: 50px;
+  position: relative;
+  right: 100px;
+}
+
+.footer ul li {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.footer img {
+  position: relative;
+  margin-left: 1px;
+  padding-left: 12px;
+  padding-top: 7px;
+}
+
+.textAndLogo {
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.footerLogo {
+  width: 200px;
+  height: 200px;
+  margin-top: -25px;
+}
+
+.footerText {
+  font-size: 30px;
+  margin-left: 25px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: gray;
+}
+
+.sccialmedia {
+  display: flex;
+  width: 100px;
+}
+
+/* ===================================================================================== */
+
+#btnScroll {
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#btnScroll img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* ===================================================================================== */
+
+.innerContainer {
+  display: block;
+  width: 70%;
+  margin: auto;
+  grid-area: cont;
+  background: #262626;
+}
+
+.innerContainer img {
+  display: block;
+  width: 85%;
+  margin: 10px auto;
+  /* height: 250px; */
+  height: 1100px;
+}
+
+.innerContainer h2 {
+  color: #89CFF0;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.innerContainer p {
+  color: white;
+  font-size: 20px;
+  font-family: system-ui;
+  padding: 10px;
+}
+
+.innerContainer h1 {
+  color: #89CFF0;
+  font-size: 45px;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.innerContainer li {
+  color: white;
+  font-size: 18px;
+  font-family: system-ui;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+#finalP {
+  color: white;
+  font-size: 25px;
+  font-family: system-ui;
+  padding: 10px;
+  text-align: center;
+}
+
+/* ===================================================================================== */
+
+/* sideList */
+.sideList {
+  position: fixed;
+  right: 0%;
+  top: 90px;
+  background-color: #000000;
+  color: white;
+  display: none;
+
+}
+
+.sideList ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sideList ul li {
+  height: 48px;
+}
+
+.sideList ul li a {
+  text-decoration: none;
+  font-size: xx-large;
+  color: #ffffff;
+  padding: 0 20px 0 20px;
+}
+
+.sideList ul li a:hover {
+  color: black;
+  background-color: #ddd;
+}
+
+/* ========================================================================================= */

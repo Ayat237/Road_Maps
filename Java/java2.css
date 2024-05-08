@@ -1,0 +1,341 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: #262626;
+  animation-name: background_photo;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+/* =============================================================================================== */
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-areas: "nav nav nav nav nav nav nav nav nav nav""lo lo lo lo lo lo lo lo lo lo""cont cont cont cont cont cont cont cont cont cont"
+    "foot foot foot foot foot foot foot foot foot foot";
+  /* text-align: center;   */
+  grid-template-rows: 100px 300px 1fr 200px;
+  grid-gap: 5px 5px;
+  color: #f2f2f2;
+}
+
+/* .s1 {
+  grid-area: logo;
+  background-color: #000000;
+  color: #f2f2f2;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+} */
+
+/* =============================================================================================== */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  grid-area: nav;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 90px;
+  width: 100%;
+  z-index: 99999;
+  text-decoration: none;
+}
+
+.Register {
+  position: relative;
+  right: 58px;
+  top: 15px;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+.Login {
+  position: relative;
+  right: 51px;
+  top: 15px;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+.registerimg {
+  position: relative;
+  top: 12px;
+}
+
+.Login:hover,
+.Register:hover {
+  text-decoration: underline;
+  color: #f7f7f7;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+nav li:hover {
+  color: #c7bdbd;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin-right: 80px;
+}
+
+.Search {
+  width: 220px;
+  height: 50px;
+  margin-left: 288px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #000000;
+  border-radius: 10px;
+  position: relative;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+.con {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 95%;
+  margin-top: -40px;
+  width: 60px;
+  height: 150px;
+  position: relative;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 2.5px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+nav li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  margin-right: 30px;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+/* ======================================================================================= */
+
+#btnScroll {
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#btnScroll img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* ===================================================================================== */
+
+.java a:hover {
+  color: #424242;
+}
+
+.java1 {
+  background-color: rgba(255, 255, 255, 0);
+  background-image: linear-gradient(rgba(45, 27, 12, 0.2) 47%, #262626 100%), url(java.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: lo;
+  width: 100%;
+  margin-top: -20px;
+  height: 300px;
+}
+
+.java {
+  grid-area: cont;
+}
+
+.java h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 50px;
+}
+
+.java p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 27px;
+  margin-top: 10px;
+  word-break: break-word;
+  white-space: normal;
+  width: 1000px;
+  margin-left: 100px;
+}
+
+.java h2 {
+  color: #ffffff;
+  font-size: 45px;
+  margin-left: 100px;
+  width: 1100px;
+}
+
+.java img {
+  width: 1100px;
+  height: 500px;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.java ul {
+  color: #ffffff;
+  font-size: 27px;
+  margin-top: 10px;
+  word-break: break-word;
+  white-space: normal;
+  width: 1000px;
+  margin-left: 150px;
+}
+
+.java a {
+  color: #ffffff;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 150px;
+  background-color: #8a8a8a;
+  border-radius: 50px;
+  display: block;
+  width: 400px;
+  text-align: center;
+}
+
+
+/* ===================================================================================== */
+
+.footer {
+  grid-area: foot;
+  background-color: #000000;
+  color: #ffffff;
+  height: 300px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.footer div ul {
+  display: grid;
+}
+
+.footer ul {
+  list-style: none;
+  float: left;
+  padding-left: 210px;
+  margin-top: 50px;
+  position: relative;
+  right: 100px;
+}
+
+.footer ul li {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.footer img {
+  position: relative;
+  margin-left: 1px;
+  padding-left: 12px;
+  padding-top: 7px;
+}
+
+.textAndLogo {
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.footerLogo {
+  width: 200px;
+  height: 200px;
+  margin-top: -25px;
+}
+
+.footerText {
+  font-size: 30px;
+  margin-left: 25px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: gray;
+}
+
+.sccialmedia {
+  display: flex;
+  width: 100px;
+}
+
+/* ===================================================================================== */
+
+/* sideList */
+.sideList {
+  position: fixed;
+  right: 0%;
+  top: 90px;
+  background-color: #000000;
+  color: white;
+  display: none;
+
+}
+
+.sideList ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sideList ul li {
+  height: 48px;
+}
+
+.sideList ul li a {
+  text-decoration: none;
+  font-size: xx-large;
+  color: #ffffff;
+  padding: 0 20px 0 20px;
+}
+
+.sideList ul li a:hover {
+  color: black;
+  background-color: #ddd;
+}
+
+/* ========================================================================================= */

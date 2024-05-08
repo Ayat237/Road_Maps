@@ -1,0 +1,354 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: #0d0d0d;
+  animation-name: background_photo;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes background_photo {
+  0% {
+    /* background-image: url("e886dfce1235859ee8a2d5af107351fd.jpg");
+    background-repeat: no-repeat; */
+    background: url(media/electro1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  50% {
+    /* background-image: url("7af662d12c60b17a8fa459cbc32a9361.jpg");
+    background-repeat: no-repeat; */
+    background: url(media/electro2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  100% {
+    /* background-image: url("e886dfce1235859ee8a2d5af107351fd.jpg");
+    background-repeat: no-repeat; */
+    background: url(media/electro1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-areas:
+    "nav nav nav nav nav nav nav nav nav nav""cont cont cont cont cont cont cont cont cont cont "
+    "foot foot foot foot foot foot foot foot foot foot";
+  /* text-align: center;   */
+  grid-template-rows: 80px 800px 200px;
+  grid-gap: 5px 5px;
+}
+
+/* =============================================================================================== */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  grid-area: nav;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 90px;
+  width: 100%;
+  z-index: 99999;
+  text-decoration: none;
+}
+
+.Register {
+  position: relative;
+  right: 58px;
+  top: 15px;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+.Login {
+  position: relative;
+  right: 51px;
+  top: 15px;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+.registerimg {
+  position: relative;
+  top: 12px;
+}
+
+.Login:hover,
+.Register:hover {
+  text-decoration: underline;
+  color: #f7f7f7;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+nav li:hover {
+  color: #c7bdbd;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin-right: 80px;
+}
+
+.Search {
+  width: 220px;
+  height: 50px;
+  margin-left: 288px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #000000;
+  border-radius: 10px;
+  position: relative;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+.con {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 95%;
+  margin-top: -40px;
+  width: 60px;
+  height: 150px;
+  position: relative;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 2.5px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+nav li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  margin-right: 30px;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+/* ======================================================================================= */
+
+.signUp {
+  grid-area: cont;
+  width: 700px;
+  height: 500px;
+  border-radius: 15px;
+  background-color: #59595970;
+  margin: 100px 25%;
+  transition: 0.5s;
+}
+
+.signUp:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.signUp input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.signUp label {
+  display: inline-block;
+  color: #f2f2f2;
+  top: 40px;
+  left: 75px;
+  font-size: x-large;
+  position: relative;
+  font-weight: bold;
+}
+
+input[type="submit"]{
+  background-color: #68b25b;
+  color: white;
+  border: none;
+  width: 310px;
+  height: 50px;
+  margin-top: 20px;
+  font-size: larger;
+  border-radius: 10px;
+
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  transform: scale(0.9, 0.9);
+  border-color: #68b25b;
+}
+
+#txt {
+  border: 2px solid black;
+}
+
+.SignUpLabel {
+  text-align: center;
+  color: #ffffff;
+}
+
+/* ===================================================================================== */
+
+.footer {
+  grid-area: foot;
+  background-color: #000000;
+  color: #ffffff;
+  height: 300px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.footer div ul {
+  display: grid;
+}
+
+.footer ul {
+  list-style: none;
+  float: left;
+  padding-left: 210px;
+  margin-top: 50px;
+  position: relative;
+  right: 100px;
+}
+
+.footer ul li {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.footer img {
+  position: relative;
+  margin-left: 1px;
+  padding-left: 12px;
+  padding-top: 7px;
+}
+
+.textAndLogo {
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.footerLogo {
+  width: 200px;
+  height: 200px;
+  margin-top: -25px;
+}
+
+.footerText {
+  font-size: 30px;
+  margin-left: 25px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: gray;
+}
+
+.sccialmedia {
+  display: flex;
+  width: 100px;
+}
+
+/* ===================================================================================== */
+
+/* ===================================================================================== */
+
+/* sideList */
+.sideList {
+  position: fixed;
+  right: 0%;
+  top: 90px;
+  background-color: #000000;
+  color: white;
+  display: none;
+
+}
+
+.sideList ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sideList ul li {
+  height: 48px;
+}
+
+.sideList ul li a {
+  text-decoration: none;
+  font-size: xx-large;
+  color: #ffffff;
+  padding: 0 20px 0 20px;
+}
+
+.sideList ul li a:hover {
+  color: black;
+  background-color: #ddd;
+}
+
+/* ======================================================================================= */
+
+#btnScroll {
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#btnScroll img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* ======================================================================================= */
